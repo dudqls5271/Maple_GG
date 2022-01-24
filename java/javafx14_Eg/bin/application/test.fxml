@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" 
+			prefWidth="420.0" 
+			stylesheets="@application.css" 
+			xmlns="http://javafx.com/javafx/8.0.65" 
+			xmlns:fx="http://javafx.com/fxml/1" 
+			fx:controller="application.controller">
+	<children>
+		<Text fx:id="view_name" fill="#480bff" layoutX="142.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="test" wrappingWidth="248.12109375">
+			<font>
+				<Font name="Haettenschweiler" size="41.0" />
+			</font>
+		</Text>
+      <ImageView fx:id="view_img" fitHeight="142.0" fitWidth="154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/wlsehddkepf.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="view_lv" layoutX="142.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lv.239" wrappingWidth="48.62109375">
+         <font>
+            <Font name="Haettenschweiler" size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="view_name11" layoutX="142.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="길드 :  " wrappingWidth="62.12109375">
+         <font>
+            <Font name="Haettenschweiler" size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="view_gil" layoutX="199.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="미리" wrappingWidth="202.62109375">
+         <font>
+            <Font name="Haettenschweiler" size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="view_name1111" layoutX="197.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="인기도 :" wrappingWidth="85.12109130248427">
+         <font>
+            <Font name="Haettenschweiler" size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="view_pop" layoutX="279.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="150" wrappingWidth="113.62109130248427">
+         <font>
+            <Font name="Haettenschweiler" size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="192.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="|" />
+      <SplitPane dividerPositions="0.16161616161616163" layoutX="7.0" layoutY="160.0" maxHeight="-Infinity" maxWidth="-Infinity" orientation="VERTICAL" prefHeight="200.0" prefWidth="200.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="211.0" layoutX="-8.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/mr.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="172.0" prefWidth="198.0">
+               <children>
+                  <Text fx:id="view_mr" layoutX="68.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="49 층" wrappingWidth="59.242191433906555">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text fx:id="view_mr_hr" layoutX="67.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14분 34초" />
+                  <ImageView fitHeight="90.0" fitWidth="106.0" layoutX="53.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/47.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <SplitPane dividerPositions="0.16161616161616163" layoutX="213.0" layoutY="160.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="200.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="68.0" prefWidth="198.0">
+               <children>
+                  <ImageView fitHeight="46.0" fitWidth="204.0" layoutX="-6.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/un1.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="177.0" prefWidth="198.0">
+               <children>
+                  <Text fx:id="view_un_lv" layoutX="74.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lv.3408" />
+                  <Text fx:id="view_un" layoutX="1.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="그랜드마스터" textAlignment="CENTER" wrappingWidth="191.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="view_um_img" fitHeight="86.0" fitWidth="203.0" layoutX="53.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/ung/s1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <SplitPane dividerPositions="0.16161616161616163" layoutX="7.0" layoutY="365.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="200.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="211.0" layoutX="-8.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/the.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="172.0" prefWidth="198.0">
+               <children>
+                  <Text fx:id="view_the" layoutX="68.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="49 층" wrappingWidth="59.242191433906555">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text fx:id="view_the_hr" layoutX="67.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14분 34초" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <SplitPane dividerPositions="0.16161616161616163" layoutX="213.0" layoutY="365.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="200.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="211.0" layoutX="-8.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/grad.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="172.0" prefWidth="198.0">
+               <children>
+                  <Text layoutX="68.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="49 층" wrappingWidth="59.242191433906555">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Text layoutX="67.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14분 34초" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+	</children>
+</AnchorPane>

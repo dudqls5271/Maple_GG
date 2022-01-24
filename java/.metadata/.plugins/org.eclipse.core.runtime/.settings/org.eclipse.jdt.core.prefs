@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=C\:/Program Files/Java/jdk-15.0.2/lib/jrt-fs.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=C\:/Program Files/Java/jdk-15.0.2/lib/src.zip
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=15
+org.eclipse.jdt.core.compiler.compliance=15
+org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
+org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+org.eclipse.jdt.core.compiler.release=enabled
+org.eclipse.jdt.core.compiler.source=15
+org.eclipse.jdt.core.userLibrary.javafx=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<userlibrary systemlibrary\="false" version\="2">\r\n\t<archive path\="F\:/Libraries/javafx.base.jar"/>\r\n\t<archive path\="F\:/Libraries/javafx.controls.jar"/>\r\n\t<archive path\="F\:/Libraries/javafx.fxml.jar"/>\r\n\t<archive path\="F\:/Libraries/javafx.graphics.jar"/>\r\n\t<archive path\="F\:/Libraries/javafx.media.jar"/>\r\n\t<archive path\="F\:/Libraries/javafx.swing.jar"/>\r\n\t<archive path\="F\:/Libraries/javafx.web.jar"/>\r\n\t<archive path\="F\:/Libraries/javafx-swt.jar"/>\r\n\t<archive path\="F\:/Libraries/jsoup-1.13.1.jar"/>\r\n\t<archive path\="F\:/javafx-sdk-11.0.2/lib/src.zip"/>\r\n</userlibrary>\r\n

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller">
+   <children>
+      <ImageView fitHeight="729.0" fitWidth="1294.0" layoutX="-4.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/bag.png" />
+         </image>
+      </ImageView>
+      <HBox fx:id="test" layoutX="244.0" layoutY="-2.0" prefHeight="67.0" prefWidth="737.0">
+         <children>
+            <Button fx:id="nav1" mnemonicParsing="false" onAction="#handleButtonActoin" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Home" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="nav2" mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="업데이트" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="nav3" mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="이벤트" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="nav4" mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="링크/유니온" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="nav5" mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="무토 레시피" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="nav6" mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="SW정보" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <ImageView fx:id="view_img" fitHeight="167.0" fitWidth="199.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/notfind.png" />
+         </image></ImageView>
+      <Text fx:id="view_name" fill="WHITE" layoutX="273.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="test" wrappingWidth="638.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="41.0" fitWidth="31.0" layoutX="144.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane fx:id="ex01" layoutX="350.0" layoutY="371.0" prefHeight="272.0" prefWidth="272.0">
+         <children>
+            <ImageView fitHeight="49.0" fitWidth="276.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/un1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="view_um_img" fitHeight="109.0" fitWidth="100.0" layoutX="85.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/notfind.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="view_un" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00층" textAlignment="CENTER" wrappingWidth="276.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="view_un_lv" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00분00초" textAlignment="CENTER" wrappingWidth="275.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="view_un_info1" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="275.0" />
+            <Text fx:id="view_un_info2" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="275.0" />
+            <Text fx:id="view_un_info3" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="275.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ex02" layoutX="970.0" layoutY="371.0" prefHeight="272.0" prefWidth="270.0">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="276.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/grad.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="view_gread_img" fitHeight="109.0" fitWidth="100.0" layoutX="85.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/notfind.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="view_gread_lv" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00분00초" textAlignment="CENTER" wrappingWidth="275.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="view_gread_info1" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="275.0" />
+            <Text fx:id="view_gread_info2" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="275.0" />
+            <Text fx:id="view_gread_info3" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="275.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ex04" layoutX="660.0" layoutY="371.0" prefHeight="272.0" prefWidth="270.0">
+         <children>
+            <Text fx:id="view_the" layoutX="-1.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="276.0" />
+            <ImageView fitHeight="43.0" fitWidth="275.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/the.jpg" />
+               </image>
+            </ImageView>
+            <Text fx:id="view_the_hr" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00분00초" textAlignment="CENTER" wrappingWidth="275.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="view_the_info1" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="275.0" />
+            <Text fx:id="view_the_info2" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="275.0" />
+            <Text fx:id="view_the_info3" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="275.0" />
+            <Text fx:id="view_the_notfound" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="275.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ex03" layoutX="40.0" layoutY="371.0" prefHeight="272.0" prefWidth="270.0">
+         <children>
+            <ImageView fitHeight="62.0" fitWidth="275.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/mr.jpg" />
+               </image>
+            </ImageView>
+            <Text fx:id="view_mr" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00층" textAlignment="CENTER" wrappingWidth="270.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="view_mr_img" fitHeight="109.0" fitWidth="100.0" layoutX="85.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/notfind.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="view_mr_hr" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00분00초" textAlignment="CENTER" wrappingWidth="275.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="view_mr_info1" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="275.0" />
+            <Text fx:id="view_mr_info2" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="275.0" />
+            <Text fx:id="view_mr_info3" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="275.0" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="view_server" fitHeight="24.0" fitWidth="23.0" layoutX="245.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/notfind.png" />
+         </image></ImageView>
+      <Text fx:id="view_lv" fill="WHITE" layoutX="245.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lv.300" wrappingWidth="513.109375" />
+   </children>
+</AnchorPane>

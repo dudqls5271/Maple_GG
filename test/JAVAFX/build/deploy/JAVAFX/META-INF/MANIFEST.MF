@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Implementation-Title: MapleGG
+Implementation-Version: Ver1.0
+Permissions: sandbox
+JavaFX-Feature-Proxy: None
+JavaFX-Version: 8.0
+Class-Path: JAVAFX.jar libs/javafx-swt.jar libs/javafx.base.jar libs/j
+ avafx.controls.jar libs/javafx.fxml.jar libs/javafx.graphics.jar libs
+ /javafx.media.jar libs/javafx.swing.jar libs/javafx.web.jar libs/jsou
+ p-1.13.1.jar resources/MapleGG-setup-icon.bmp resources/MapleGG.ico r
+ esources/windows/MapleGG-setup-icon.bmp resources/windows/MapleGG.ico
+Created-By: JavaFX Packager
+Implementation-Vendor: YB_BIN
+Main-Class: application.Main
+

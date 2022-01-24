@@ -1,0 +1,12 @@
+content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaPostfixProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.javaChainProposalCategory\u0000
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="javafx.scene.layout.Pane"><rhs name\="javafx.scene.layout.BorderPane"/></lhs><lhs name\="javafx.scene.layout.Region"><rhs name\="javafx.scene.layout.BorderPane"/></lhs><lhs name\="javafx.scene.Parent"><rhs name\="javafx.scene.layout.BorderPane"/></lhs><lhs name\="javafx.scene.Node"><rhs name\="javafx.scene.layout.BorderPane"/></lhs><lhs name\="javafx.event.EventTarget"><rhs name\="javafx.scene.layout.BorderPane"/><rhs name\="javafx.scene.Scene"/></lhs><lhs name\="javafx.css.Styleable"><rhs name\="javafx.scene.layout.BorderPane"/></lhs><lhs name\="javafx.scene.layout.BorderPane"><rhs name\="javafx.scene.layout.BorderPane"/></lhs><lhs name\="javafx.scene.Scene"><rhs name\="javafx.scene.Scene"/></lhs><lhs name\="application.Vo"><rhs name\="application.Vo"/></lhs><lhs name\="application.controller$Test"><rhs name\="application.controller$Test"/></lhs><lhs name\="javafx.fxml.Initializable"><rhs name\="application.MainController"/></lhs><lhs name\="application.MainController"><rhs name\="application.MainController"/></lhs></history>
+content_assist_number_of_computers=13
+eclipse.preferences.version=1
+markOccurrences=false
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=21
+spelling_locale_initialized=true
+typefilter_migrated=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

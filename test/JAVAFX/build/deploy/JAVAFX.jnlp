@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JAVAFX.jnlp">
+  <information>
+    <title>JAVAFX</title>
+    <vendor>YB_BIN</vendor>
+    <description>MapleGG</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JAVAFX.jar" size="3548439" download="eager" />
+    <jar href="libs\javafx-swt.jar" size="36811" download="eager" />
+    <jar href="libs\javafx.base.jar" size="749889" download="eager" />
+    <jar href="libs\javafx.controls.jar" size="2511137" download="eager" />
+    <jar href="libs\javafx.fxml.jar" size="127395" download="eager" />
+    <jar href="libs\javafx.graphics.jar" size="4295861" download="eager" />
+    <jar href="libs\javafx.media.jar" size="270594" download="eager" />
+    <jar href="libs\javafx.swing.jar" size="119848" download="eager" />
+    <jar href="libs\javafx.web.jar" size="714741" download="eager" />
+    <jar href="libs\jsoup-1.13.1.jar" size="393867" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="0" height="0" main-class="application.Main"  name="MapleGG" />
+  <update check="background"/>
+</jnlp>
