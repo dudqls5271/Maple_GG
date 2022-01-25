@@ -1,0 +1,28 @@
+package linkUnion;
+
+public class linkVO {
+	private String job;
+	private String skll;
+	private String effect;
+	
+	public String getJob() {
+		return job;
+	}
+	public void setJob(String job) {
+		this.job = job;
+	}
+	public String getSkll() {
+		return skll;
+	}
+	public void setSkll(String skll) {
+		this.skll = skll;
+	}
+	public String getEffect() {
+		return effect;
+	}
+	public void setEffect(String effect) {
+		this.effect = effect;
+	}
+	
+	
+}

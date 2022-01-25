@@ -1,0 +1,30 @@
+package linkUnion;
+
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.StringProperty;
+import javafx.scene.control.Button;
+
+public class linkVO {
+	private StringProperty name;
+    private StringProperty address;
+    private StringProperty gender;
+ 
+    public linkVO(StringProperty name, StringProperty address, Button button) {
+        this.name = name;
+        this.address = address;
+        this.gender = button;
+    }
+ 
+    public StringProperty nameProperty() {
+        return name;
+    }
+    public StringProperty addressProperty() {
+        return address;
+    }
+    public StringProperty genderProperty() {
+        return gender;
+    }
+
+
+
+}

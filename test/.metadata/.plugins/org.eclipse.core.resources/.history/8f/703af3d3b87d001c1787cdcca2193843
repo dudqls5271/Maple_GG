@@ -1,0 +1,12 @@
+package linkUnion;
+
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.StringProperty;
+
+public class linkVO {
+	private StringProperty job;
+	private StringProperty skill;
+	private StringProperty effect;
+
+
+}

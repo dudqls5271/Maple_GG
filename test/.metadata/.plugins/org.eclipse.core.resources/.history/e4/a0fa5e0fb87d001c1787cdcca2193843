@@ -1,0 +1,48 @@
+package linkUnion;
+
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.StringProperty;
+
+public class linkVO {
+	/*
+	 * private StringProperty job; private StringProperty skll; private
+	 * StringProperty effect;
+	 * 
+	 * 
+	 * public linkVO(StringProperty job, StringProperty skll, StringProperty effect)
+	 * { this.job = job; this.skll = skll; this.effect = effect; } public
+	 * StringProperty getJob() { return job; }
+	 * 
+	 * public StringProperty getSkll() { return skll; }
+	 * 
+	 * public StringProperty getEffect() { return effect; }
+	 */
+
+	
+	private StringProperty name;
+    private StringProperty address;
+    private StringProperty gender;
+    private IntegerProperty classNum;
+ 
+    public linkVO(StringProperty name, StringProperty address, StringProperty gender, IntegerProperty classNum) {
+        this.name = name;
+        this.address = address;
+        this.gender = gender;
+        this.classNum = classNum;
+    }
+ 
+    public StringProperty nameProperty() {
+        return name;
+    }
+    public StringProperty addressProperty() {
+        return address;
+    }
+    public StringProperty genderProperty() {
+        return gender;
+    }
+    public IntegerProperty classNumProperty() {
+        return classNum;
+    }
+
+
+}
