@@ -19,22 +19,8 @@ JAVAFX을 이용한 Maple 유저검색 프로그램
 
 ## 화면
 
----
 
-**View_01**
-
-![view_01](https://user-images.githubusercontent.com/49426352/122533372-75642c80-d05c-11eb-997e-cad21fcc95fb.png)
-
-닉네임 검색 View 밑에 다양한 정보 추가 예정<br/>
-**<span style="color:red">Ex) 썬데이 메이플, 업데이트 정보, 사냥터 정보 등등</span>**
-
-**View_02**
-
-![화면 캡처 2021-06-20 214805](https://user-images.githubusercontent.com/49426352/122674968-5b6c4a80-d212-11eb-913e-ac49a6e8a015.png)
-
-검색한 유저의 정보을 보여주는 화면 추후 다양한 정보 추가 예정<br/>
-**<span style="color:red">Ex) 마지막 활동일 : N일전, 마지막 업데이트 : N일전, 정보갱신(버튼)</span>**
-
-## .exe파일
-
-아직 배타 버전이라 추후 올릴예정
+![메인화면](https://user-images.githubusercontent.com/49426352/159935228-f9198de4-d3ac-4227-ac3b-77bd447de314.png)
+![검색화면](https://user-images.githubusercontent.com/49426352/159935233-bf03d95b-e3c2-4690-bfd2-018c65d1c26c.png)
+![업데이트](https://user-images.githubusercontent.com/49426352/159935234-d2d64d66-6665-4e68-af50-b39b2823ae77.png)
+![정보](https://user-images.githubusercontent.com/49426352/159935236-da1fdeb2-df77-4997-aade-cbb4dc9170e4.png)
