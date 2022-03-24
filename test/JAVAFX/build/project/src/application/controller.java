@@ -1,15 +1,24 @@
 package application;
 
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Button;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.SplitPane;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 
@@ -31,14 +40,86 @@ public class controller implements Initializable{
     			 view_the_info1, view_the_info2, view_the_info3,
     			 view_gread_lv,
     			 view_gread_info1, view_gread_info2, view_gread_info3,
-    			 view_the_notfound;
+    			 view_the_notfound,
+    			 lastUpate;
     
     @FXML
     private ImageView view_img, view_um_img, view_mr_img, view_gread_img, view_server, view_the_img;
     
+    @FXML
+    private Hyperlink userLink;
+    
+    @FXML 
+    private Button nav1, nav2, refresh, nav6;
+    
+    public void updateBut() throws IOException {
+    	Stage stage = (Stage)nav2.getScene().getWindow();
+    	
+    	FXMLLoader loader = new FXMLLoader(getClass().getResource("updateList.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+    	stage.setScene(scene);
+    }
+    
+    public void muto() throws IOException {
 
+    	Alert alert = new Alert(AlertType.WARNING);
+		ImageView icon = new ImageView("/img/notfind.png");
+		icon.setFitHeight(60);
+        icon.setFitWidth(60);
+        alert.getDialogPane().setGraphic(icon);
+		alert.setTitle("잠깐!"); 
+		alert.setHeaderText("아직 준비 중입니다"); 
+		alert.showAndWait();
+    }
+    
+    public void handleButtonActoin() throws IOException {
+    	Stage stage = (Stage)nav1.getScene().getWindow();
+    	
+    	FXMLLoader loader = new FXMLLoader(getClass().getResource("SearchUser.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+    	stage.setScene(scene);
+    }
+    
+  
+    public void swpage() throws IOException {
+    	Stage stage = (Stage)nav6.getScene().getWindow();
+    	
+    	FXMLLoader loader = new FXMLLoader(getClass().getResource("SWpage.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+    	stage.setScene(scene);
+    }
+    
+	 public void linkButton() throws IOException {
+		 
+		 System.out.println("test");
+	    	
+		Alert alert = new Alert(AlertType.WARNING);
+		ImageView icon = new ImageView("/img/notfind.png");
+		icon.setFitHeight(60);
+		icon.setFitWidth(60);
+		alert.getDialogPane().setGraphic(icon);
+		alert.setTitle("잠깐!"); 
+		alert.setHeaderText("아직 준비 중입니다"); 
+		alert.showAndWait();
+		
+	    	
+	//    	Stage stage = (Stage)nav2.getScene().getWindow();
+	//    	
+	//    	FXMLLoader loader = new FXMLLoader(getClass().getResource("../linkUnion/link_01.fxml"));
+	//        Parent root = loader.load();
+	//        Scene scene = new Scene(root);
+	//    	stage.setScene(scene);
+	    }
+	 String userLinkJ;
+	 Document doc;
 	@Override
     public void initialize(URL arg0, ResourceBundle arg1) {
+		
+		System.out.println("arg0 : " + arg0);
+		System.out.println("arg1 : " + arg1);
 		
     	VBox vBox1 = new VBox();
     	SplitPane.setResizableWithParent(vBox1, false);
@@ -53,26 +134,12 @@ public class controller implements Initializable{
 
 		  	String url = "https://maple.gg/u/"+MainController.ver1; // 크롤링할 url지정
 		  	System.out.println("==================>" + url);
-			Document doc;
+		  	
 			doc = Jsoup.connect(url).get();
-
+			userLinkJ = url;
+			
 			//정보
-			Element user_pic = doc.select("img").get(11);
-			if (user_pic.attr("src").equals("https://kr-cdn.maple.gg/images/images/img-noresult.svg")) {
-//				Stage primarystage = new Stage();
-//				 FXMLLoader loader = new FXMLLoader();
-//                 Pane root = loader.load(getClass().getResource("NotFoundUser.fxml").openStream());
-//                 Scene scene = new Scene(root);
-//                 primarystage.setScene(scene);
-//                 primarystage.show();
-				
-				Alert alert = new Alert(AlertType.WARNING);
-				alert.setTitle("WARNING");
-				alert.setHeaderText("잘못된 정보 입니다.");
-				alert.setContentText("대화창을 닫고 닉네임을 다시 입력해보세요.");
-
-				alert.showAndWait();
-			}
+			Element user_pic = doc.select("img[class=\"character-image\"]").get(0);
 			System.out.println("URL : " + user_pic.attr("src"));
 			String img = user_pic.attr("src");
 			Image img_url = new Image(img);
@@ -96,13 +163,25 @@ public class controller implements Initializable{
 			System.out.println("인기도 : " + user_pop);
 			
 			Elements gg_guild = doc.select("a[class=\"text-yellow text-underline\"]");
-			String user_guild = ("길드 " + gg_guild.select("a[class=\"text-yellow text-underline\"]").text());
+			
+			String user_guild;
+			if(gg_guild.select("a[class=\"text-yellow text-underline\"]").text() == "") {
+				user_guild = "길드 : 없음";
+			} else {
+				user_guild = ("길드 : " + gg_guild.select("a[class=\"text-yellow text-underline\"]").text());
+			}
+			
 			System.out.println(user_guild);
 
 
 			Elements gg_synthesis = doc.select("h1[class=\"user-summary-floor font-weight-bold\"]");
 			Elements gg_synthesis_hr = doc.select("small[class=\"user-summary-duration\"]");
 			Elements gg_synthesis_div = doc.select("div[class=\"col-lg-3 col-6 mt-3 px-1\"]");
+			
+			// 마지막 업데이트
+			String lastUpateJ = doc.select("span[class=\"d-block font-weight-light\"]").text();
+			
+			System.out.println(lastUpateJ);
 
 			//=============================무릉==================================
 			try {
@@ -162,7 +241,6 @@ public class controller implements Initializable{
 				System.out.println("더시드 시간 : " + user_the_hr);
 				System.out.println("==============================================================");
 				
-				view_the_img.getImage();
 				view_the.setText(user_the);
 				view_the_hr.setText(user_the_hr);
 				view_the_info1.setText(user_the_info);
@@ -258,8 +336,10 @@ public class controller implements Initializable{
 			}
 			
 
+			userLink.setText(userLinkJ);
 			view_name.setText(name);
-			view_lv.setText(user_Lv + " | " + user_pop + " | " + user_pop);
+			view_lv.setText(user_Lv + " | " + user_pop + " | " + user_guild);
+			lastUpate.setText(lastUpateJ);
 			//view_pop.setText(user_pop);
 			//view_gil.setText(user_guild);
 			view_img.setImage(img_url);
@@ -269,7 +349,19 @@ public class controller implements Initializable{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
         
+	}
+	
+	public void refresh() throws IOException {
+		initialize(null, null);
+		refresh.setText("새로고침 완료");
+		refresh.setStyle("-fx-background-color:  #4287f5;");
+	}
+	
+	public void userLink(ActionEvent event) throws URISyntaxException, IOException {
+		System.out.println("link clicked!");
+		java.awt.Desktop.getDesktop().browse(new URI(userLinkJ));
 	}
 
 }

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -8,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="linkUnion.linkUnion">
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="linkUnion.linkUnion_01">
    <children>
       <ImageView fitHeight="729.0" fitWidth="1294.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -54,7 +56,31 @@
       <Text fx:id="view_name11" fill="WHITE" layoutX="244.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="- 링크 스킬을 적용하면 추가 경험치, 추가 공격력 등 육성에 도움이 됩니다링크 정보" wrappingWidth="729.4921875" />
       <Text fx:id="view_name" fill="WHITE" layoutX="244.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="링크 정보" />
       <Text fx:id="view_name12" fill="WHITE" layoutX="244.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="- 캐릭터 레벨 70 달성시 링크 스킬 1레벨, 120 달성시 링크스킬 2레벨 (단, 제로는 챕터를 완료할때 마다 레벨이 증가함)" wrappingWidth="882.4921875" />
-      <AnchorPane fx:id="exp" layoutX="105.0" layoutY="312.0" prefHeight="160.0" prefWidth="504.0">
-      </AnchorPane>
+      <HBox fx:id="test1" layoutX="244.0" layoutY="264.0" prefHeight="33.0" prefWidth="721.0" style="-fx-border-radius: 50;">
+         <children>
+            <Button fx:id="eventNav1" layoutX="100.0" mnemonicParsing="false" onAction="#eventNav1" prefHeight="34.0" prefWidth="135.0" text="경험치 관련" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="eventNav2" mnemonicParsing="false" onAction="#eventNav2" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="데미지 관련" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="eventNav3" layoutX="100.0" mnemonicParsing="false" onAction="#eventNav3" prefHeight="34.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="기타" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <TableView fx:id="myTableView" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="244.0" layoutY="346.0" prefHeight="215.0" prefWidth="860.0" scaleShape="false" stylesheets="@../application/DarkTheme.css">
+        <columns>
+          <TableColumn fx:id="job" editable="false" prefWidth="130.0" sortable="false" styleClass="col" text="직업" />
+          <TableColumn fx:id="skill" editable="false" prefWidth="252.0" sortable="false" styleClass="col" text="스킬" />
+            <TableColumn fx:id="effect" editable="false" prefWidth="459.0" sortable="false" styleClass="col" text="효과" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>

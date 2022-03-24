@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -15,47 +16,42 @@
             <Image url="@../img/bag.png" />
          </image>
       </ImageView>
-      <HBox fx:id="test" layoutX="244.0" layoutY="-2.0" prefHeight="67.0" prefWidth="737.0">
+      <HBox fx:id="test" layoutX="343.0" prefHeight="67.0" prefWidth="737.0">
          <children>
             <Button fx:id="nav1" mnemonicParsing="false" onAction="#handleButtonActoin" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Home" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
             </Button>
-            <Button fx:id="nav2" mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="업데이트" textFill="WHITE">
+            <Button fx:id="nav2" mnemonicParsing="false" onAction="#updateBut" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="업데이트" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
             </Button>
-            <Button fx:id="nav3" mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="이벤트" textFill="WHITE">
+            <Button fx:id="nav4" mnemonicParsing="false" onAction="#linkButton" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="링크/유니온" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
             </Button>
-            <Button fx:id="nav4" mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="링크/유니온" textFill="WHITE">
+            <Button fx:id="nav5" mnemonicParsing="false" onAction="#muto" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="무토 레시피" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
             </Button>
-            <Button fx:id="nav5" mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="무토 레시피" textFill="WHITE">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
-            <Button fx:id="nav6" mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="SW정보" textFill="WHITE">
+            <Button fx:id="nav6" mnemonicParsing="false" onAction="#swpage" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="SW정보" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
             </Button>
          </children>
       </HBox>
-      <ImageView fx:id="view_img" fitHeight="167.0" fitWidth="199.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="view_img" fitHeight="167.0" fitWidth="199.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/notfind.png" />
          </image></ImageView>
-      <Text fx:id="view_name" fill="WHITE" layoutX="273.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="test" wrappingWidth="638.0">
+      <Text fx:id="view_name" fill="WHITE" layoutX="221.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="test" wrappingWidth="638.0">
          <font>
-            <Font size="30.0" />
+            <Font size="20.0" />
          </font>
       </Text>
       <ImageView fitHeight="41.0" fitWidth="31.0" layoutX="144.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
@@ -158,10 +154,18 @@
             <Text fx:id="view_mr_info3" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="275.0" />
          </children>
       </AnchorPane>
-      <ImageView fx:id="view_server" fitHeight="24.0" fitWidth="23.0" layoutX="245.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="view_server" fitHeight="24.0" fitWidth="23.0" layoutX="193.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/notfind.png" />
          </image></ImageView>
-      <Text fx:id="view_lv" fill="WHITE" layoutX="245.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lv.300" wrappingWidth="513.109375" />
+      <Text fx:id="view_lv" fill="WHITE" layoutX="193.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lv.300" wrappingWidth="513.109375" />
+      <Text fx:id="lastUpate" fill="WHITE" layoutX="193.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="마지막 업데이트 :  n일전" wrappingWidth="385.48828125" />
+      <Text fill="#e44343" layoutX="847.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="alter" text="마지막 업데이트가 1일 이상인 정보는 위 링크를 들어가서 갱신 후 새로고침 해주새요." wrappingWidth="436.48828125">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Hyperlink fx:id="userLink" layoutX="843.0" layoutY="119.0" onAction="#userLink" prefHeight="29.0" prefWidth="353.0" styleClass="linkUpdate" text="https://maple.gg/u/" textFill="WHITE" />
+      <Button fx:id="refresh" layoutX="846.0" layoutY="93.0" mnemonicParsing="false" onAction="#refresh" styleClass="refresh" text="새로 고침" textFill="WHITE" />
    </children>
 </AnchorPane>

@@ -30,7 +30,7 @@ public class Main extends Application {
 	    	
 	        primaryStage.getIcons().add(new Image("/img/notfind.png"));
 
-
+	        primaryStage.setResizable(false);
 	        primaryStage.setTitle("Maple.gg");
 
 		} catch(Exception e) {

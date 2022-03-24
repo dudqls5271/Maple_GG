@@ -6,23 +6,44 @@
 	-fx-font-family: "MAPLESTORY LIGHT"; /* NanumSquare */
 }
 
+.alter {
+	-fx-font-size: 10pt;
+	-fx-font-family: "MAPLESTORY LIGHT"; /* NanumSquare */
+}
+
+
+
 #text_event1, #text_event2,
 #text_event3, #text_event4,
 #text_event5, #text_event6,
 #text_event7, #text_event8,
-#text_event9, #text_event10,
+#text_event9, #text_event10 {
+	-fx-font-size: 10pt;
+	-fx-font-family: "MAPLESTORY LIGHT"; /* NanumSquare */		
+}
+
+
 #hyperlink, #eventGG, .linkUpdate,
 #eventNav1, #eventNav2, #eventNav3, #eventNav4, #eventNav5, #eventNav6, #btn{
 	-fx-font-size: 14pt;
 	-fx-font-family: "MAPLESTORY LIGHT"; /* NanumSquare */
 }
 
-#eventNav1, #eventNav2, #eventNav3, #eventNav4, #eventNav5, #eventNav6 {
+.refresh {
+	-fx-font-size: 10pt;
+	-fx-font-family: "MAPLESTORY LIGHT"; /* NanumSquare */
+}
+
+#eventNav1, #eventNav2, #eventNav3, #eventNav4, #eventNav5, #eventNav6, .refresh {
 	-fx-background-color:  #323232;
 }
 
 #hyperlink, .linkUpdate {
 	-fx-border-color: transparent;
+}
+
+.col {
+	-fx-font-family: "MAPLESTORY LIGHT";
 }
 
 #search{
@@ -41,7 +62,7 @@
 	-fx-font-family: "MAPLESTORY LIGHT";
 }
 
-#view_mr_hr, #view_un_lv, #view_gread_lv {
+#view_mr_hr, #view_un_lv, #view_gread_lv, .swpageText {
 	-fx-font-size: 14pt;
 	-fx-font-family: "MAPLESTORY LIGHT";
 }
@@ -92,6 +113,21 @@
 	-fx-border-color: #dee2e6;
     -fx-border-width: 1 0 0 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

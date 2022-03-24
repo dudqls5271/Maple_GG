@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.swpage">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/searchbag.jpg" />
+         </image>
+      </ImageView>
+      <HBox fx:id="test" layoutX="343.0" prefHeight="67.0" prefWidth="737.0">
+         <children>
+            <Button fx:id="nav1" mnemonicParsing="false" onAction="#handleButtonActoin" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Home" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="nav2" mnemonicParsing="false" onAction="#updateBut" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="업데이트" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="nav4" mnemonicParsing="false" onAction="#linkButton" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="링크/유니온" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="nav5" mnemonicParsing="false" onAction="#muto" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="무토 레시피" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="nav6" mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="SW정보" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Text fx:id="name_v" fill="WHITE" layoutX="607.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="닉네임 : 진동아델" wrappingWidth="202.48828125" />
+      <Text fx:id="level_v" fill="WHITE" layoutX="610.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Lv. 300" wrappingWidth="131.48828125" />
+      <Text fill="WHITE" layoutX="350.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="swpageText" text="해당 Github 링크 :" wrappingWidth="165.48825073242188" />
+      <Text fx:id="mr_v" fill="WHITE" layoutX="607.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="무릉 : 00층" wrappingWidth="257.48828125" />
+      <Text fx:id="pop_v" fill="WHITE" layoutX="607.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="인기도 : 100" wrappingWidth="131.48828125" />
+      <Text fx:id="gild_v" fill="WHITE" layoutX="608.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="길드 : 없음" wrappingWidth="131.48828125" />
+      <Hyperlink cache="true" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="511.0" layoutY="428.0" mnemonicParsing="true" scaleShape="false" styleClass="swpageText" text="https://github.com/dudqls5271/Maple_GG" textFill="WHITE" visited="true" />
+      <Text fx:id="un_v" fill="WHITE" layoutX="607.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="유니온 : 등 급 / Lv.30000" wrappingWidth="228.48828125" />
+      <Text fill="WHITE" layoutX="348.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="swpageText" text="블로그 Github.io :" wrappingWidth="172.82162475585938" />
+      <Hyperlink cache="true" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="505.0" layoutY="460.0" mnemonicParsing="true" scaleShape="false" styleClass="swpageText" text="https://dudqls5271.github.io/" textFill="WHITE" visited="true" />
+      <Text fx:id="name_v1" fill="WHITE" layoutX="528.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="개발자 인게임 정보" textAlignment="CENTER" wrappingWidth="202.48828125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="img_v" fitHeight="170.0" fitWidth="173.0" layoutX="404.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fill="WHITE" layoutX="334.0" layoutY="682.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="2022 © YoungBin All Code cannot be copied without permission." textAlignment="CENTER" wrappingWidth="640.8216247558594" />
+      <Text fx:id="server_v" fill="WHITE" layoutX="608.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="서버 : 없음" wrappingWidth="131.48828125" />
+      <Text fill="WHITE" layoutX="347.0" layoutY="513.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="swpageText" text="크롤링 홈페이지 : " wrappingWidth="168.82162475585938" />
+      <Hyperlink cache="true" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="497.0" layoutY="492.0" mnemonicParsing="true" scaleShape="false" styleClass="swpageText" text="https://maple.gg" textFill="WHITE" visited="true" />
+      <Text fill="WHITE" layoutX="348.0" layoutY="567.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="swpageText" text="문제가 생길시 아래 Email로 연락 주세요" wrappingWidth="672.1549377441406" />
+      <Text fill="WHITE" layoutX="349.0" layoutY="596.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="swpageText" text="Email : youngbin5271@gmail.com" wrappingWidth="672.1549377441406" />
+   </children>
+</AnchorPane>

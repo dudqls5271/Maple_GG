@@ -5,4 +5,7 @@
 		<item value="github.com"/>
 		<item value="bitbucket.org"/>
 	</list>
+	<section name="GitCommitSearchPage">
+		<item key="HISTORY_SIZE" value="0"/>
+	</section>
 </section>

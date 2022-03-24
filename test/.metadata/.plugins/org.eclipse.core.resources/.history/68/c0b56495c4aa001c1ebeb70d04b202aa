@@ -1,0 +1,129 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+ 
+#view_name {
+	-fx-font-size: 25pt;
+	-fx-font-family: "MAPLESTORY LIGHT"; /* NanumSquare */
+}
+
+.alter {
+	-fx-font-size: 10pt;
+	-fx-font-family: "MAPLESTORY LIGHT"; /* NanumSquare */
+}
+
+#text_event1, #text_event2,
+#text_event3, #text_event4,
+#text_event5, #text_event6,
+#text_event7, #text_event8,
+#text_event9, #text_event10,
+#hyperlink, #eventGG, .linkUpdate,
+#eventNav1, #eventNav2, #eventNav3, #eventNav4, #eventNav5, #eventNav6, #btn{
+	-fx-font-size: 14pt;
+	-fx-font-family: "MAPLESTORY LIGHT"; /* NanumSquare */
+}
+
+.refresh {
+	-fx-font-size: 10pt;
+	-fx-font-family: "MAPLESTORY LIGHT"; /* NanumSquare */
+}
+
+#eventNav1, #eventNav2, #eventNav3, #eventNav4, #eventNav5, #eventNav6, .refresh {
+	-fx-background-color:  #323232;
+}
+
+#hyperlink, .linkUpdate {
+	-fx-border-color: transparent;
+}
+
+.col {
+	-fx-font-family: "MAPLESTORY LIGHT";
+}
+
+#search{
+	-fx-font-size: 16pt;
+	-fx-font-family: "MAPLESTORY LIGHT";
+}
+
+#view_lv, #eventGGText, .swpageText {
+	-fx-font-size: 18pt;
+	-fx-font-family: "MAPLESTORY LIGHT";
+}
+
+
+#view_mr, #view_the {
+	-fx-font-size: 22pt;
+	-fx-font-family: "MAPLESTORY LIGHT";
+}
+
+#view_mr_hr, #view_un_lv, #view_gread_lv {
+	-fx-font-size: 14pt;
+	-fx-font-family: "MAPLESTORY LIGHT";
+}
+
+#view_un, #view_the_hr, #view_the_notfound {
+	-fx-font-size: 18pt;
+	-fx-font-family: "MAPLESTORY LIGHT";
+}
+
+#view_text, #txtField {
+	-fx-font-size: 16pt;
+	-fx-font-family: "MAPLESTORY LIGHT";
+}
+
+#ex01, #ex02, #ex03, #ex04 {
+	-fx-background-color: "white";
+}
+
+#view_mr_info1, #view_mr_info2, #view_mr_info3,
+#view_un_info1, #view_un_info2, #view_un_info3,
+#view_the_info1, #view_the_info2, #view_the_info3,
+#view_gread_info1, #view_gread_info2, #view_gread_info3,
+#date_1, #date_2, #date_3, #date_4,
+#date_5, #date_6, #date_7, #date_8,
+#date_9, #date_10, 
+#nav1, #nav2, #nav3, #nav4, #nav5, #nav6,
+.text  {
+	-fx-font-size: 12pt;
+	-fx-font-family: "MAPLESTORY LIGHT";
+}
+
+.my-btn-class {
+	-fx-background-color: none;
+}
+
+.my-btn-class:hover {
+  -fx-background-color: #6ebce6;
+}
+
+#NotFound2, #NotFound1 {
+	-fx-font-size: 12pt;
+	-fx-font-family: "MAPLESTORY LIGHT";
+}
+
+
+.tr {
+	-fx-background-color: #f8f9fa;	
+	-fx-border-color: #dee2e6;
+    -fx-border-width: 1 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

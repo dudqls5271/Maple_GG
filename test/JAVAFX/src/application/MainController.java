@@ -30,14 +30,14 @@ import javafx.stage.Stage;
 public class MainController implements Initializable{
 
 	@FXML 
-    private Button btn, nav2;
+    private Button btn, nav2, swpage;
     
     @FXML 
     private TextField txtField;
     
     @FXML
     private Text notfound, text_event1, text_event2, text_event3, text_event4, text_event5, text_event6, text_event7, text_event8, text_event9, text_event10,
-    			 date_1, date_2, date_3, date_4, date_5, date_6, date_7, date_8, date_9, date_10, eventGG;
+    			 date_1, date_2, date_3, date_4, date_5, date_6, date_7, date_8, date_9, date_10, eventGG, updateText;
     
     @FXML
     private Label resultLabel; 
@@ -47,7 +47,7 @@ public class MainController implements Initializable{
 
     
     @FXML
-    private Hyperlink hyperlink ;
+    private Hyperlink hyperlink, updatelink ;
     
     public void updateBut() throws IOException {
     	Stage stage = (Stage)nav2.getScene().getWindow();
@@ -58,13 +58,47 @@ public class MainController implements Initializable{
     	stage.setScene(scene);
     }
     
-    public void linkButton() throws IOException {
+    
+    public void swpage() throws IOException {
     	Stage stage = (Stage)nav2.getScene().getWindow();
     	
-    	FXMLLoader loader = new FXMLLoader(getClass().getResource("../linkUnion/link.fxml"));
+    	FXMLLoader loader = new FXMLLoader(getClass().getResource("SWpage.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
     	stage.setScene(scene);
+    }
+    
+    public void muto() throws IOException {
+
+    	Alert alert = new Alert(AlertType.WARNING);
+		ImageView icon = new ImageView("/img/notfind.png");
+		icon.setFitHeight(60);
+        icon.setFitWidth(60);
+        alert.getDialogPane().setGraphic(icon);
+		alert.setTitle("잠깐!"); 
+		alert.setHeaderText("아직 준비 중입니다"); 
+		alert.showAndWait();
+    }
+    
+    public void linkButton() throws IOException {
+    	
+    	
+    	Alert alert = new Alert(AlertType.WARNING);
+		ImageView icon = new ImageView("/img/notfind.png");
+		icon.setFitHeight(60);
+        icon.setFitWidth(60);
+        alert.getDialogPane().setGraphic(icon);
+		alert.setTitle("잠깐!"); 
+		alert.setHeaderText("아직 준비 중입니다"); 
+		alert.showAndWait();
+    	
+    	
+//    	Stage stage = (Stage)nav2.getScene().getWindow();
+//    	
+//    	FXMLLoader loader = new FXMLLoader(getClass().getResource("../linkUnion/link_01.fxml"));
+//        Parent root = loader.load();
+//        Scene scene = new Scene(root);
+//    	stage.setScene(scene);
     }
     
     
@@ -86,6 +120,8 @@ public class MainController implements Initializable{
         	stage.show();
 		} catch (Exception e) {
 			// TODO: handle exception
+			e.printStackTrace();
+
 			
 			Alert alert = new Alert(AlertType.WARNING);
 			ImageView icon = new ImageView("/img/notfind.png");
@@ -100,7 +136,7 @@ public class MainController implements Initializable{
     }
 	
 	public static String ver1;
-	
+	String updateTextJ;
 	public String initData() {
 		return txtField.getText();
 	}
@@ -113,12 +149,14 @@ public class MainController implements Initializable{
 	
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-    	try {
+    	try {    		
     		String url = "https://maple.gg/"; // 크롤링할 url지정
 		  	System.out.println("==================>" + url);
 			Document doc = Jsoup.connect(url).get();
 						
 			int eventCount = doc.select("div[class=\"d-inline-block\"]").size();
+			
+			System.out.println(eventCount);
 			
 			if(eventCount > 5) {
 				Element eventURL = doc.select("div[class=\"d-inline-block\"]").get(0).select("a").get(0);
@@ -156,7 +194,7 @@ public class MainController implements Initializable{
 				event4_img_str = event4_img.attr("src"); Image event4_img_url = new
 				Image(event4_img_str); event4.setImage(event4_img_url);
 			}
-			if (eventCount < 4) {
+			if (eventCount == 3) {
 				Element event5_img = doc.select("div[class=\"d-inline-block\"]").get(0).select("img").get(0);
 				String text_event_5 = doc.select("div[class=\"d-inline-block\"]").get(0).select("div").get(0).text();
 				text_event5.setText(text_event_5);
@@ -175,16 +213,16 @@ public class MainController implements Initializable{
 				Image event6_img_url = new Image(event6_img_str);
 				event6.setImage(event6_img_url);
 				
-				Element event7_img = doc.select("div[class=\"d-inline-block\"]").get(3).select("img").get(0);
-				String text_event_7 = doc.select("div[class=\"d-inline-block\"]").get(3).select("div").get(0).text(); 
-				String date_event_7 = doc.select("small[class=\"text-secondary\"]").get(3).text();
+				Element event7_img = doc.select("div[class=\"d-inline-block\"]").get(2).select("img").get(0);
+				String text_event_7 = doc.select("div[class=\"d-inline-block\"]").get(2).select("div").get(0).text(); 
+				String date_event_7 = doc.select("small[class=\"text-secondary\"]").get(2).text();
 				date_7.setText(date_event_7); text_event7.setText(text_event_7); String
 				event7_img_str = event7_img.attr("src"); 
 				Image event7_img_url = new Image(event7_img_str); 
 				event7.setImage(event7_img_url);
 				
 			} 
-			if (eventCount < 3) {
+			if (eventCount == 2) {
 				Element event8_img = doc.select("div[class=\"d-inline-block\"]").get(0).select("img").get(0);
 				String text_event_8 = doc.select("div[class=\"d-inline-block\"]").get(0).select("div").get(0).text();
 				text_event8.setText(text_event_8);
@@ -204,7 +242,7 @@ public class MainController implements Initializable{
 				event9.setImage(event9_img_url);
 				
 			} 
-			if (eventCount < 2) {
+			if (eventCount == 1) {
 				Element event10_img = doc.select("div[class=\"d-inline-block\"]").get(0).select("img").get(0);
 				String text_event_10 = doc.select("div[class=\"d-inline-block\"]").get(0).select("div").get(0).text();
 				text_event10.setText(text_event_10);
@@ -220,7 +258,34 @@ public class MainController implements Initializable{
 			// TODO: handle exception
 			e.printStackTrace();
 		}
+
+
+    	try {
+    		// 업데이트 확인 문구
+    		String url = "https://github.com/dudqls5271/Maple_GG"; // 크롤링할 url지정
+		  	System.out.println("==================>" + url);
+			Document doc = Jsoup.connect(url).get();
+			
+			updateTextJ = doc.select("h1[dir=\"auto\"]").get(0).text();
+			System.out.println(updateTextJ);
+
+			if(updateTextJ.indexOf("Update") != -1) {
+				System.out.println(updateTextJ.indexOf("Update"));
+				updateText.setText("업데이트가 있습니다. 아래 링크를 통해 업데이트 해주세요.");
+				updatelink.setText("https://github.com/dudqls5271/Maple_GG");
+			} else {
+				updatelink.setStyle("-fx-cursor: Default;");
+			}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
     }   
 
-    
+	public void updatelink(ActionEvent event) throws URISyntaxException, IOException {
+		if(updateTextJ.indexOf("Update") != -1) {
+			java.awt.Desktop.getDesktop().browse(new URI("https://github.com/dudqls5271/Maple_GG"));
+		}
+		
+	}
 }

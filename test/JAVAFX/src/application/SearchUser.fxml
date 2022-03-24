@@ -24,7 +24,7 @@
          </font></TextField>
       <Line endX="248.0" layoutX="546.0" layoutY="351.0" startX="-100.0" stroke="WHITE" />
       <Button fx:id="btn" layoutX="795.0" layoutY="319.0" mnemonicParsing="false" onAction="#handleButtonActoin" prefHeight="28.0" prefWidth="70.0" styleClass="my-btn-class" text="검색" textFill="WHITE" />
-      <HBox fx:id="test" layoutX="244.0" prefHeight="67.0" prefWidth="737.0">
+      <HBox fx:id="test" layoutX="343.0" prefHeight="67.0" prefWidth="737.0">
          <children>
             <Button fx:id="nav1" mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Home" textFill="WHITE">
                <font>
@@ -36,29 +36,24 @@
                   <Font size="16.0" />
                </font>
             </Button>
-            <Button fx:id="nav3" mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="이벤트" textFill="WHITE">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
             <Button fx:id="nav4" mnemonicParsing="false" onAction="#linkButton" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="링크/유니온" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
             </Button>
-            <Button fx:id="nav5" mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="무토 레시피" textFill="WHITE">
+            <Button fx:id="nav5" mnemonicParsing="false" onAction="#muto" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="무토 레시피" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
             </Button>
-            <Button fx:id="nav6" mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="SW정보" textFill="WHITE">
+            <Button fx:id="nav6" mnemonicParsing="false" onAction="#swpage" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="SW정보" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
             </Button>
          </children>
       </HBox>
-      <Text fx:id="view_name" fill="WHITE" layoutX="503.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="유저 검색 Ver.01" />
+      <Text fx:id="view_name" fill="WHITE" layoutX="503.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="유저 검색 Beta" />
       <Text fx:id="notfound" layoutX="628.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" />
       <ImageView fx:id="event1" fitHeight="150.0" fitWidth="200.0" layoutX="182.0" layoutY="478.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -131,7 +126,9 @@
       <Text fx:id="text_event10" fill="WHITE" layoutX="533.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="199.98828125" />
       <Text fx:id="date_10" fill="WHITE" layoutX="532.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="199.98828125" />
       <Text fx:id="eventGG" fill="WHITE" layoutX="532.0" layoutY="641.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt; 이벤트 더 보기 &gt;" textAlignment="CENTER" wrappingWidth="199.98828125" />
-      <Hyperlink fx:id="hyperlink" cache="true" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="550.0" layoutY="645.0" mnemonicParsing="true" onAction="#openlink" scaleShape="false" text="[maple.gg/event]" textFill="WHITE" textOverrun="CLIP" visited="true" />
-      <Text fx:id="eventGGText" fill="#768cfc" layoutX="518.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt; 진행중인 이벤트 &gt;" textAlignment="CENTER" wrappingWidth="219.98828125" />
+      <Hyperlink fx:id="hyperlink" cache="true" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="559.0" layoutY="645.0" mnemonicParsing="true" onAction="#openlink" scaleShape="false" text="[maple.gg/event]" textFill="WHITE" textOverrun="CLIP" visited="true" />
+      <Text fx:id="eventGGText" fill="#faf475" layoutX="518.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt; 진행중인 이벤트 &gt;" textAlignment="CENTER" wrappingWidth="219.98828125" />
+      <Text fx:id="updateText" fill="#4dffe6" layoutX="446.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" wrappingWidth="464.0" />
+      <Hyperlink fx:id="updatelink" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="446.0" layoutY="382.0" onAction="#updatelink" prefHeight="24.0" prefWidth="366.0" scaleShape="false" textFill="#4dffe6" visited="true" />
    </children>
 </AnchorPane>
