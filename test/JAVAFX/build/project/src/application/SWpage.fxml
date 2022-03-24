@@ -47,25 +47,26 @@
       </HBox>
       <Text fx:id="name_v" fill="WHITE" layoutX="607.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="닉네임 : 진동아델" wrappingWidth="202.48828125" />
       <Text fx:id="level_v" fill="WHITE" layoutX="610.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Lv. 300" wrappingWidth="131.48828125" />
-      <Text fill="WHITE" layoutX="350.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="swpageText" text="해당 Github 링크 :" wrappingWidth="165.48825073242188" />
+      <Text fill="WHITE" layoutX="350.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="swpageText" text="해당 Github 링크 :" wrappingWidth="165.48825073242188" />
       <Text fx:id="mr_v" fill="WHITE" layoutX="607.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="무릉 : 00층" wrappingWidth="257.48828125" />
       <Text fx:id="pop_v" fill="WHITE" layoutX="607.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="인기도 : 100" wrappingWidth="131.48828125" />
       <Text fx:id="gild_v" fill="WHITE" layoutX="608.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="길드 : 없음" wrappingWidth="131.48828125" />
-      <Hyperlink cache="true" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="511.0" layoutY="428.0" mnemonicParsing="true" scaleShape="false" styleClass="swpageText" text="https://github.com/dudqls5271/Maple_GG" textFill="WHITE" visited="true" />
+      <Hyperlink fx:id="github" cache="true" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="511.0" layoutY="392.0" mnemonicParsing="true" onAction="#github" scaleShape="false" styleClass="swpageText" text="https://github.com/dudqls5271/Maple_GG" textFill="WHITE" visited="true" />
       <Text fx:id="un_v" fill="WHITE" layoutX="607.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="유니온 : 등 급 / Lv.30000" wrappingWidth="228.48828125" />
-      <Text fill="WHITE" layoutX="348.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="swpageText" text="블로그 Github.io :" wrappingWidth="172.82162475585938" />
-      <Hyperlink cache="true" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="505.0" layoutY="460.0" mnemonicParsing="true" scaleShape="false" styleClass="swpageText" text="https://dudqls5271.github.io/" textFill="WHITE" visited="true" />
+      <Text fill="WHITE" layoutX="348.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="swpageText" text="블로그 Github.io :" wrappingWidth="172.82162475585938" />
+      <Hyperlink fx:id="githubio" cache="true" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="505.0" layoutY="424.0" mnemonicParsing="true" onAction="#githubio" scaleShape="false" styleClass="swpageText" text="https://dudqls5271.github.io/" textFill="WHITE" visited="true" />
       <Text fx:id="name_v1" fill="WHITE" layoutX="528.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="개발자 인게임 정보" textAlignment="CENTER" wrappingWidth="202.48828125">
          <font>
             <Font size="24.0" />
          </font>
       </Text>
       <ImageView fx:id="img_v" fitHeight="170.0" fitWidth="173.0" layoutX="404.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true" />
-      <Text fill="WHITE" layoutX="334.0" layoutY="682.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="2022 © YoungBin All Code cannot be copied without permission." textAlignment="CENTER" wrappingWidth="640.8216247558594" />
+      <Text fill="WHITE" layoutX="320.0" layoutY="682.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="2022 © YoungBin All Code cannot be copied without permission." textAlignment="CENTER" wrappingWidth="640.8216247558594" />
       <Text fx:id="server_v" fill="WHITE" layoutX="608.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="서버 : 없음" wrappingWidth="131.48828125" />
-      <Text fill="WHITE" layoutX="347.0" layoutY="513.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="swpageText" text="크롤링 홈페이지 : " wrappingWidth="168.82162475585938" />
-      <Hyperlink cache="true" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="497.0" layoutY="492.0" mnemonicParsing="true" scaleShape="false" styleClass="swpageText" text="https://maple.gg" textFill="WHITE" visited="true" />
-      <Text fill="WHITE" layoutX="348.0" layoutY="567.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="swpageText" text="문제가 생길시 아래 Email로 연락 주세요" wrappingWidth="672.1549377441406" />
-      <Text fill="WHITE" layoutX="349.0" layoutY="596.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="swpageText" text="Email : youngbin5271@gmail.com" wrappingWidth="672.1549377441406" />
+      <Text fill="WHITE" layoutX="347.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="swpageText" text="크롤링 홈페이지 : " wrappingWidth="168.82162475585938" />
+      <Hyperlink fx:id="ggpage" cache="true" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="497.0" layoutY="456.0" mnemonicParsing="true" onAction="#ggpage" scaleShape="false" styleClass="swpageText" text="https://maple.gg" textFill="WHITE" visited="true" />
+      <Text fill="WHITE" layoutX="348.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="swpageText" text="문제가 생길시 아래 Email로 연락 주세요" wrappingWidth="672.1549377441406" />
+      <Text fill="WHITE" layoutX="349.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="swpageText" text="Email : youngbin5271@gmail.com" wrappingWidth="672.1549377441406" />
+      <Text fill="WHITE" layoutX="346.0" layoutY="589.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="swpageText" text="본 sw는 maple.gg에서 만든 것이 아니며 youngbin이 만든 것 입니다." />
    </children>
 </AnchorPane>

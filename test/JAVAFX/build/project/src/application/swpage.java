@@ -41,6 +41,9 @@ public class swpage implements Initializable{
     
     @FXML 
     private Button nav1, nav2, refresh;
+    @FXML 
+    private Hyperlink github;
+    
     
     public void updateBut() throws IOException {
     	Stage stage = (Stage)nav2.getScene().getWindow();
@@ -279,17 +282,23 @@ public class swpage implements Initializable{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+			
 		
-        
 	}
-	
-	public void refresh() throws IOException {
-		initialize(null, null);
-	}
-	
-	public void userLink(ActionEvent event) throws URISyntaxException, IOException {
+
+	public void github(ActionEvent event) throws URISyntaxException, IOException {
 		System.out.println("link clicked!");
-		java.awt.Desktop.getDesktop().browse(new URI(userLinkJ));
+		java.awt.Desktop.getDesktop().browse(new URI("https://github.com/dudqls5271/Maple_GG"));
+	}
+	
+	public void githubio(ActionEvent event) throws URISyntaxException, IOException {
+		System.out.println("link clicked!");
+		java.awt.Desktop.getDesktop().browse(new URI("https://dudqls5271.github.io/"));
+	}
+	
+	public void ggpage(ActionEvent event) throws URISyntaxException, IOException {
+		System.out.println("link clicked!");
+		java.awt.Desktop.getDesktop().browse(new URI("https://maple.gg"));
 	}
 
 }
