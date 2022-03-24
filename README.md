@@ -19,13 +19,16 @@ JAVAFX을 이용한 Maple 유저검색 프로그램
 ---
 <h3 style = "color:red">**해당 sw을 무단으로 수정하지 말아주세요**</h3>
 
-크롤링페이지 : https://maple.gg
-해당 sw은 maple.gg을 크롤링한 sw입니다.
+**업데이트는 시간날때마다 개발 해서 올리겠습니다.**
+
+**해당 sw은 maple.gg을 크롤링한 sw입니다.**
+**크롤링페이지 : https://maple.gg**
 
 **maple.gg에서 만든 sw가 아닙니다.**
 
-문제가 생길시 아래 Email로 연락 주세요
-Email : youngbin5271@gmail.com
+**문제가 생길시 아래 Email로 연락 주세요**
+**Email : youngbin5271@gmail.com**
+
 
 ## 사용언어
 ---
