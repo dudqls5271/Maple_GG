@@ -50,3 +50,7 @@ JAVAFX을 이용한 Maple 유저검색 프로그램
 ---
 sw 정보
 ![정보](https://user-images.githubusercontent.com/49426352/159939207-79368db1-46e8-4d7c-8a10-6018e4daafa3.png)
+
+
+## .exe파일
+---
