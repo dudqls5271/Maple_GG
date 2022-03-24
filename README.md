@@ -5,7 +5,7 @@ JAVAFX을 이용한 Maple 유저검색 프로그램
 ## 목차
 
 ---
-
+- [참고](#참고)
 - [사용언어](#사용언어)
 - [화면](#메인화면)
   - 메인화면
@@ -15,6 +15,16 @@ JAVAFX을 이용한 Maple 유저검색 프로그램
   - 무토 레시피 (준비중)
 - [.exe파일](#.exe파일)
 - [추가예정](#추가예정)
+
+## 참고
+---
+크롤링페이지 : https://maple.gg
+
+해당 sw은 maple.gg을 크롤링한 sw입니다.
+maple.gg에서 만든 sw가 아닙니다. 
+
+문제가 생길시 아래 Email로 연락 주세요
+Email : youngbin5271@gmail.com
 
 ## 사용언어
 ---
@@ -54,3 +64,5 @@ sw 정보
 
 ## .exe파일
 ---
+아래 경로에들어가서 .exe 파일을 다운 받아준다.
+https://github.com/dudqls5271/Maple_GG/tree/main/test/JAVAFX/build/deploy/bundles
