@@ -13,15 +13,16 @@ JAVAFX을 이용한 Maple 유저검색 프로그램
   - 업데이트
   - 링크/유니온 (준비중)
   - 무토 레시피 (준비중)
-- [.exe파일](#.exe파일)
-- [추가예정](#추가예정)
+- [설치파일](#설치파일)
 
 ## 참고
 ---
-크롤링페이지 : https://maple.gg
+<h3 style = "color:red">**해당 sw을 무단으로 수정하지 말아주세요**</h3>
 
+크롤링페이지 : https://maple.gg
 해당 sw은 maple.gg을 크롤링한 sw입니다.
-maple.gg에서 만든 sw가 아닙니다. 
+
+**maple.gg에서 만든 sw가 아닙니다.**
 
 문제가 생길시 아래 Email로 연락 주세요
 Email : youngbin5271@gmail.com
@@ -62,7 +63,7 @@ sw 정보
 ![정보](https://user-images.githubusercontent.com/49426352/159939207-79368db1-46e8-4d7c-8a10-6018e4daafa3.png)
 
 
-## .exe파일
+## 설치파일
 ---
 아래 경로에들어가서 .exe 파일을 다운 받아준다.
 https://github.com/dudqls5271/Maple_GG/tree/main/test/JAVAFX/build/deploy/bundles
