@@ -300,5 +300,10 @@ public class swpage implements Initializable{
 		System.out.println("link clicked!");
 		java.awt.Desktop.getDesktop().browse(new URI("https://maple.gg"));
 	}
+	
+	public void twitter(ActionEvent event) throws URISyntaxException, IOException {
+		System.out.println("link clicked!");
+		java.awt.Desktop.getDesktop().browse(new URI("https://twitter.com/maple_Dkepf"));
+	}
 
 }

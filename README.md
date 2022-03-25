@@ -26,7 +26,8 @@ JAVAFX을 이용한 Maple 유저검색 프로그램
 
 **maple.gg에서 만든 sw가 아닙니다.**
 
-**문제가 생길시 아래 Email로 연락 주세요**
+**문제가 생길시 아래 Email로 연락 주세요.**
+
 **Email : youngbin5271@gmail.com**
 
 
@@ -69,4 +70,4 @@ sw 정보
 ## 설치파일
 ---
 아래 경로에들어가서 .exe 파일을 다운 받아준다.
-https://github.com/dudqls5271/Maple_GG/tree/main/test/JAVAFX/build/deploy/bundles
+https://github.com/dudqls5271/Maple_GG/raw/main/test/JAVAFX/build/deploy/bundles/MapleGG-1.0.exe

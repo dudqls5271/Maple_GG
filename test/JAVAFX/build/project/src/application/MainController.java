@@ -158,7 +158,7 @@ public class MainController implements Initializable{
 			
 			System.out.println(eventCount);
 			
-			if(eventCount > 5) {
+			if(eventCount == 4) {
 				Element eventURL = doc.select("div[class=\"d-inline-block\"]").get(0).select("a").get(0);
 				String eventURL2 = eventURL.attr("href");
 				System.out.println(eventURL2);
