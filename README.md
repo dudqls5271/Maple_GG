@@ -19,6 +19,8 @@ JAVAFX을 이용한 Maple 유저검색 프로그램
 ## 참고
 ---
 <h2 style = "color:red">**무단 배포로 사용자의 피해는 책임 지지 않습니다.**</h2>
+
+<h3 style = "color:red">**다운로드는 Github페이지를 권장 합니다.**</h3>
 <h3 style = "color:red">**퍼가실때는 아래 링크를 꼭 남겨주세요**</h3>
 
 링크 : https://github.com/dudqls5271/Maple_GG
