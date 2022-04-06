@@ -1,4 +1,4 @@
-# Maple_GG / Window
+# Maple_GG / Window Update
 
 JAVAFX을 이용한 Maple 유저검색 프로그램
 
