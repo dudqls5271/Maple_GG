@@ -261,6 +261,7 @@ public class MainController implements Initializable{
 
 
     	try {
+    		
     		// 업데이트 확인 문구
     		String url = "https://github.com/dudqls5271/Maple_GG"; // 크롤링할 url지정
 		  	System.out.println("==================>" + url);
@@ -268,8 +269,8 @@ public class MainController implements Initializable{
 			
 			updateTextJ = doc.select("h1[dir=\"auto\"]").get(0).text();
 			System.out.println(updateTextJ);
-
-			if(updateTextJ.indexOf("Update") != -1) {
+			
+			if(updateTextJ.indexOf("Update 2.0") != -1) {
 				System.out.println(updateTextJ.indexOf("Update"));
 				updateText.setText("업데이트가 있습니다. 아래 링크를 통해 업데이트 해주세요.");
 				updatelink.setText("https://github.com/dudqls5271/Maple_GG");

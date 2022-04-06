@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.updatecontroller">
+   <children>
+      <ImageView fitHeight="729.0" fitWidth="1294.0" layoutX="-4.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/updateListBack2.jpg" />
+         </image>
+      </ImageView>
+      <HBox fx:id="test" layoutX="343.0" prefHeight="67.0" prefWidth="737.0">
+         <children>
+            <Button fx:id="nav1" mnemonicParsing="false" onAction="#handleButtonActoin" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Home" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="nav2" mnemonicParsing="false" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="업데이트" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="nav4" mnemonicParsing="false" onAction="#linkButton" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="링크/유니온" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="nav5" mnemonicParsing="false" onAction="#muto" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="무토 레시피" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="nav6" mnemonicParsing="false" onAction="#swpage" prefHeight="58.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="SW정보" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Text fx:id="view_name" fill="WHITE" layoutX="244.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="업테이트 정보" />
+      <Hyperlink fx:id="eventList1" layoutX="244.0" layoutY="232.0" onAction="#eventList1" prefHeight="19.0" prefWidth="721.0" styleClass="linkUpdate" text="Hyperlink" textFill="WHITE" />
+      <Text fx:id="eventdate1" fill="WHITE" layoutX="973.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="linkUpdate" text="Text" />
+      <Hyperlink fx:id="eventList2" layoutX="244.0" layoutY="259.0" onAction="#eventList2" prefHeight="19.0" prefWidth="721.0" styleClass="linkUpdate" text="Hyperlink" textFill="WHITE" />
+      <Text fx:id="eventdate2" fill="WHITE" layoutX="973.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="linkUpdate" text="Text" />
+      <Hyperlink fx:id="eventList3" layoutX="244.0" layoutY="286.0" onAction="#eventList3" prefHeight="19.0" prefWidth="721.0" styleClass="linkUpdate" text="Hyperlink" textFill="WHITE" />
+      <Text fx:id="eventdate3" fill="WHITE" layoutX="973.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="linkUpdate" text="Text" />
+      <Hyperlink fx:id="eventList4" layoutX="244.0" layoutY="313.0" onAction="#eventList4" prefHeight="19.0" prefWidth="721.0" styleClass="linkUpdate" text="Hyperlink" textFill="WHITE" />
+      <Text fx:id="eventdate4" fill="WHITE" layoutX="973.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="linkUpdate" text="Text" />
+      <Hyperlink fx:id="eventList5" layoutX="244.0" layoutY="340.0" onAction="#eventList5" prefHeight="19.0" prefWidth="721.0" styleClass="linkUpdate" text="Hyperlink" textFill="WHITE" />
+      <Text fx:id="eventdate5" fill="WHITE" layoutX="973.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="linkUpdate" text="Text" />
+      <Hyperlink fx:id="eventList6" layoutX="244.0" layoutY="367.0" onAction="#eventList6" prefHeight="19.0" prefWidth="721.0" styleClass="linkUpdate" text="Hyperlink" textFill="WHITE" />
+      <Text fx:id="eventdate6" fill="WHITE" layoutX="973.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="linkUpdate" text="Text" />
+      <Hyperlink fx:id="eventList7" layoutX="244.0" layoutY="394.0" onAction="#eventList7" prefHeight="19.0" prefWidth="721.0" styleClass="linkUpdate" text="Hyperlink" textFill="WHITE" />
+      <Text fx:id="eventdate7" fill="WHITE" layoutX="973.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="linkUpdate" text="Text" />
+      <Hyperlink fx:id="eventList8" layoutX="244.0" layoutY="421.0" onAction="#eventList8" prefHeight="19.0" prefWidth="721.0" styleClass="linkUpdate" text="Hyperlink" textFill="WHITE" />
+      <Text fx:id="eventdate8" fill="WHITE" layoutX="973.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="linkUpdate" text="Text" />
+      <Hyperlink fx:id="eventList9" layoutX="244.0" layoutY="448.0" onAction="#eventList9" prefHeight="19.0" prefWidth="721.0" styleClass="linkUpdate" text="Hyperlink" textFill="WHITE" />
+      <Text fx:id="eventdate9" fill="WHITE" layoutX="973.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="linkUpdate" text="Text" />
+      <Hyperlink fx:id="eventList10" layoutX="244.0" layoutY="475.0" onAction="#eventList10" prefHeight="19.0" prefWidth="721.0" styleClass="linkUpdate" text="Hyperlink" textFill="WHITE" />
+      <Text fx:id="eventdate10" fill="WHITE" layoutX="973.0" layoutY="496.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="linkUpdate" text="Text" />
+      <Hyperlink fx:id="eventList11" layoutX="244.0" layoutY="502.0" onAction="#eventList11" prefHeight="19.0" prefWidth="721.0" styleClass="linkUpdate" text="Hyperlink" textFill="WHITE" />
+      <Text fx:id="eventdate11" fill="WHITE" layoutX="973.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="linkUpdate" text="Text" />
+      <Hyperlink fx:id="eventList12" layoutX="244.0" layoutY="529.0" onAction="#eventList12" prefHeight="19.0" prefWidth="721.0" styleClass="linkUpdate" text="Hyperlink" textFill="WHITE" />
+      <Text fx:id="eventdate12" fill="WHITE" layoutX="973.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="linkUpdate" text="Text" />
+      <Hyperlink fx:id="eventList13" layoutX="244.0" layoutY="556.0" onAction="#eventList13" prefHeight="19.0" prefWidth="721.0" styleClass="linkUpdate" text="Hyperlink" textFill="WHITE" />
+      <Text fx:id="eventdate13" fill="WHITE" layoutX="973.0" layoutY="577.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="linkUpdate" text="Text" />
+      <Hyperlink fx:id="eventList14" layoutX="244.0" layoutY="583.0" onAction="#eventList14" prefHeight="19.0" prefWidth="721.0" styleClass="linkUpdate" text="Hyperlink" textFill="WHITE" />
+      <Text fx:id="eventdate14" fill="WHITE" layoutX="973.0" layoutY="604.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="linkUpdate" text="Text" />
+      <Hyperlink fx:id="eventList15" layoutX="244.0" layoutY="610.0" onAction="#eventList15" prefHeight="19.0" prefWidth="721.0" styleClass="linkUpdate" text="Hyperlink" textFill="WHITE" />
+      <Text fx:id="eventdate15" fill="WHITE" layoutX="973.0" layoutY="631.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="linkUpdate" text="Text" />
+      <HBox fx:id="test1" layoutX="244.0" layoutY="148.0" prefHeight="33.0" prefWidth="721.0" style="-fx-border-radius: 50;">
+         <children>
+            <Button fx:id="eventNav1" layoutX="100.0" mnemonicParsing="false" onAction="#eventNav1" prefHeight="34.0" prefWidth="135.0" text="전체" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="eventNav2" layoutX="100.0" mnemonicParsing="false" onAction="#eventNav2" prefHeight="34.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="본섭" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="eventNav3" mnemonicParsing="false" onAction="#eventNav3" prefHeight="32.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="테스트섭" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="eventNav4" layoutX="100.0" mnemonicParsing="false" onAction="#eventNav4" prefHeight="34.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="일반캐시" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="eventNav5" layoutX="100.0" mnemonicParsing="false" onAction="#eventNav5" prefHeight="34.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="스페셜라벨" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="eventNav6" layoutX="100.0" mnemonicParsing="false" onAction="#eventNav6" prefHeight="34.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="마스터라벨" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

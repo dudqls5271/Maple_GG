@@ -45,7 +45,7 @@
             </Button>
          </children>
       </HBox>
-      <Text fx:id="view_name" fill="WHITE" layoutX="244.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="업테이트 정보" />
+      <Text fx:id="view_name" fill="WHITE" layoutX="244.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="업데이트 정보" />
       <Hyperlink fx:id="eventList1" layoutX="244.0" layoutY="232.0" onAction="#eventList1" prefHeight="19.0" prefWidth="721.0" styleClass="linkUpdate" text="Hyperlink" textFill="WHITE" />
       <Text fx:id="eventdate1" fill="WHITE" layoutX="973.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="linkUpdate" text="Text" />
       <Hyperlink fx:id="eventList2" layoutX="244.0" layoutY="259.0" onAction="#eventList2" prefHeight="19.0" prefWidth="721.0" styleClass="linkUpdate" text="Hyperlink" textFill="WHITE" />
