@@ -1,4 +1,4 @@
-# Maple_GG / Window Update
+# Maple_GG / 2020 부터 개발 중단
 
 JAVAFX을 이용한 Maple 유저검색 프로그램
 
